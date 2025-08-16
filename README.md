@@ -1,4 +1,6 @@
-### **HƯỚỚNG DẪN SỬ DỤNG TOOL TỰ ĐỘNG HAILUO v4.0**
+<img width="902" height="812" alt="image" src="https://github.com/user-attachments/assets/889cf103-046c-44b3-acd5-ebdd687178ed" />
+
+### **HƯỚNG DẪN SỬ DỤNG TOOL TỰ ĐỘNG HAILUO v4.0**
 
 **Ngày cập nhật:** 16 tháng 8, 2025
 ***

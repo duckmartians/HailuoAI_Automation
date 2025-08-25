@@ -131,7 +131,7 @@ Nếu số lượng ảnh trong thư mục nhiều hơn số lượng prompt, to
 
   * **Hỏi:** Tool báo lỗi "Không thể tự động tìm thấy profile Firefox"?
 
-      * **Đáp:** Do Firefox của bạn được cài ở một vị trí không chuẩn. Hãy nhấn nút **"Chọn Profile"** và tự điều hướng đến thư mục profile của bạn. Nó thường nằm ở `C:\Users\<Tên bạn>\AppData\Roaming\Mozilla\Firefox\Profiles\<tên profile>`.
+      * **Đáp:** Do Firefox của bạn được cài ở một vị trí không chuẩn. Hãy nhấn nút **"Chọn Profile"** và tự điều hướng đến thư mục profile của bạn.
 
   * **Hỏi:** Tại sao một số ảnh bị lỗi và bị bỏ qua?
 

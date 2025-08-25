@@ -1,209 +1,142 @@
-<img width="902" height="812" alt="image" src="https://github.com/user-attachments/assets/889cf103-046c-44b3-acd5-ebdd687178ed" />
+# 🚀 Hailuo Automation Tool v5.0
 
-### **HƯỚNG DẪN SỬ DỤNG TOOL TỰ ĐỘNG HAILUO v4.0**
+Chào mừng bạn đến với **Hailuo Automation Tool**\! Đây là công cụ giúp tự động hóa hoàn toàn quá trình tạo video từ ảnh trên trang web **Hailuo AI Video Generator**, giúp bạn tiết kiệm thời gian và công sức tối đa.
+<img width="902" height="912" alt="Screenshot 2025-08-25 095053" src="https://github.com/user-attachments/assets/637e499c-5a7f-437c-beee-042fe5d5f2c0" />
 
-**Ngày cập nhật:** 16 tháng 8, 2025
-***
-#### **1. Giới thiệu**
+-----
 
-Chào mừng bạn đến với Tool Tự động Hailuo v4.0\! Công cụ này được thiết kế để tự động hóa hoàn toàn quá trình tạo video từ ảnh và prompt trên nền tảng Hailuo AI, giúp bạn tiết kiệm thời gian và công sức tối đa.
+## ✅ Các tính năng chính
 
-#### **2. Yêu cầu Hệ thống**
+  * **Tự động hóa hoàn toàn**: Tự động tải ảnh lên, nhập prompt, và khởi tạo quá trình tạo video mà không cần can thiệp thủ công.
+  * **Xử lý hàng loạt**: Dễ dàng thêm một hoặc nhiều thư mục chứa ảnh để tool tự động xử lý tuần tự.
+  * **Lưu và Tiếp tục Thông minh**: Tự động lưu lại tiến trình sau mỗi ảnh, cho phép bạn tiếp tục công việc một cách chính xác nếu bị gián đoạn.
+  * **Quay vòng Prompt Linh hoạt**: Tự động tái sử dụng danh sách prompt một cách tuần hoàn, không cần chuẩn bị số lượng prompt bằng số lượng ảnh.
+  * **Quản lý Hàng đợi Thông minh**: Tool tự động kiểm tra hàng đợi của Hailuo AI và sẽ tạm dừng nếu hàng đợi đầy, tránh lãng phí tài nguyên.
+  * **Tùy chỉnh linh hoạt**: Cung cấp nhiều cài đặt chi tiết như thời gian chờ, số lần thử lại, giới hạn số ảnh trên mỗi thư mục, và nhiều hơn nữa.
+  * **Hẹn giờ Tác vụ**: Lên lịch tự động tạm dừng và tiếp tục công việc vào những thời điểm cụ thể trong ngày.
+  * **Giao diện Thân thiện & Tùy biến**: Giao diện trực quan, dễ sử dụng với hai chế độ Sáng/Tối, nhiều chủ đề màu sắc và hệ thống ghi log chi tiết.
+  * **Xử lý Lỗi Bền bỉ**: Tự động thử lại khi gặp lỗi tải ảnh. Các ảnh bị lỗi sau nhiều lần thử sẽ được ghi lại để bạn dễ dàng kiểm tra.
 
-Để sử dụng tool, máy tính của bạn cần đáp ứng các yêu cầu sau:
+-----
 
-  * **Hệ điều hành:** Windows 10 hoặc Windows 11.
-  * **Trình duyệt web:** **Mozilla Firefox** (bắt buộc phải được cài đặt trên máy).
-  * **File chương trình:** `HailuoAI v4.0.exe`.
+## 🖼️ Giao diện chính
 
-#### **3. Cài đặt và Chuẩn bị (Quan trọng - Chỉ làm 1 lần đầu tiên)**
+Giao diện của tool được chia thành các khu vực chức năng rõ ràng để bạn dễ dàng thao tác.
 
-Trước khi chạy tool, bạn cần chuẩn bị một vài thứ sau:
+1.  **Khu vực Dữ liệu đầu vào**: Nơi bạn thêm các thư mục ảnh và file prompt.
+2.  **Khu vực Cài đặt Tác vụ**: Nơi bạn tùy chỉnh các thông số cho quá trình tự động hóa.
+3.  **Khu vực Hẹn giờ**: Tùy chọn nâng cao để lên lịch chạy/dừng cho tool.
+4.  **Khu vực Điều khiển**: Các nút chính để bắt đầu, tạm dừng và kết thúc tác vụ.
+5.  **Khu vực Log**: Hiển thị chi tiết tiến trình công việc, các cảnh báo và lỗi (nếu có).
 
-**Bước 1: Đăng nhập tài khoản trên Firefox (Rất quan trọng)**
-Do phiên Firefox đặc biệt dùng cho tool không hỗ trợ đăng nhập Google, bạn cần phải đăng nhập trước trên Firefox thông thường để website Hailuo ghi nhớ tài khoản.
+-----
 
-1.  Mở trình duyệt Firefox của bạn một cách bình thường.
-2.  Truy cập vào trang web: **[https://hailuoai.video](https://hailuoai.video)**
-3.  Thực hiện **Đăng nhập (Login)** bằng tài khoản Google của bạn.
-4.  Sau khi đăng nhập thành công, hãy tắt Firefox đi. Quá trình này chỉ cần làm một lần.
+## 📋 Hướng dẫn sử dụng
 
-**Bước 2: Chuẩn bị Thư mục Dữ liệu**
+Thực hiện theo các bước sau để bắt đầu quá trình tự động hóa:
 
-  * **Thư mục Ảnh:** Tạo một thư mục và sao chép tất cả các file ảnh bạn muốn tạo video vào đó.
-  * **File Prompt:** Tạo một file văn bản (`.txt`). Trong file này, mỗi dòng là một câu prompt. Thứ tự các dòng prompt phải tương ứng với thứ tự các file ảnh trong thư mục của bạn.
+1.  **Chuẩn bị Dữ liệu**:
 
-**Bước 3: Tạo Lối tắt (Shortcut) để khởi động Firefox đặc biệt**
-Bây giờ, chúng ta sẽ tạo một lối tắt để chạy Firefox ở chế độ tool có thể kết nối.
+      * Tạo các thư mục chứa ảnh bạn muốn làm video.
+      * Tạo một file `.txt` chứa danh sách các câu lệnh (prompt), mỗi prompt nằm trên một dòng. *(Lưu ý: Bạn không cần tạo số prompt bằng số ảnh, tool sẽ tự động quay vòng).*
 
-1.  Nhấn chuột phải vào màn hình Desktop, chọn **New** -\> **Shortcut**.
-2.  Trong ô "Type the location of the item", hãy sao chép và dán chính xác dòng lệnh dưới đây vào:
-    ```
-    "C:\Program Files\Mozilla Firefox\firefox.exe" -marionette -start-debugger-server 2828
-    ```
-3.  Nhấn **Next**.
-4.  Ở ô đặt tên, bạn có thể gõ `Khởi động Firefox cho Tool` rồi nhấn **Finish**.
+2.  **Khởi động Tool**: Chạy file `HailuoAI v5.0.exe`.
 
-Bây giờ bạn đã có một icon shortcut mới trên màn hình.
+      * *Lần đầu tiên sử dụng*: Một cửa sổ **Kích hoạt bản quyền** sẽ hiện ra. Hãy làm theo hướng dẫn để kích hoạt tool.
 
-#### **4. Hướng dẫn Sử dụng**
+3.  **Thêm Thư mục ảnh**:
 
-**Bước 1: Khởi động**
+      * Nhấn nút **"Thêm thư mục..."** để chọn từng thư mục.
+      * Hoặc dán danh sách đường dẫn vào ô lớn rồi nhấn **"Thêm từ danh sách"**.
 
-1.  Nhấn đúp chuột vào shortcut **"Khởi động Firefox cho Tool"** mà bạn vừa tạo. Một cửa sổ Firefox sẽ mở ra và tự động truy cập trang Hailuo (bạn sẽ thấy mình đã ở trong trạng thái đăng nhập).
-2.  **Giữ nguyên cửa sổ Firefox đó**, không được tắt.
-3.  Bây giờ, hãy chạy file `HailuoAI v4.0.exe`. Giao diện chính của tool sẽ hiện ra.
+4.  **Chọn File Prompt**:
 
-**Bước 2: Kích hoạt bản quyền (Lần đầu tiên)**
-Nếu đây là lần đầu bạn chạy tool, một cửa sổ "Kích hoạt" sẽ hiện ra.
+      * Nhấn nút **"Browse..."** ở mục "File prompt" và chọn file `.txt` bạn đã chuẩn bị.
 
-1.  Nhấn nút "Sao chép" để lấy mã nhận dạng.
-2.  Gửi mã này cho nhà phát triển để nhận Chuỗi kích hoạt.
-3.  Dán chuỗi kích hoạt vào ô và nhấn "Kích hoạt".
+5.  **Tùy chỉnh Cài đặt**:
 
-**Bước 3: Thiết lập các Tác vụ**
-Trên giao diện chính, hãy điền các thông tin sau:
+      * Chỉnh sửa các thông số trong khu vực "Cài đặt tác vụ" nếu cần. Xem giải thích chi tiết ở phần dưới.
 
-  * **Thư mục ảnh:** Nhấn nút **"Browse..."** và chọn đến thư mục chứa ảnh bạn đã chuẩn bị.
-  * **File prompt:** Nhấn nút **"Browse..."** và chọn đến file `.txt` chứa các câu lệnh của bạn.
-  * **Bắt đầu từ ảnh số:** Mặc định là `1`. Nếu bạn muốn chạy tiếp từ ảnh số 5, hãy điền `5`.
-  * **Số lần thử lại:** Nếu một ảnh bị lỗi, tool sẽ tự động thử lại bấy nhiêu lần trước khi bỏ qua. Mặc định là `3`.
-  * **Giao diện:**
-      * **Nút "Chế độ Sáng" / "Chế độ Tối":** Nhấn để lọc danh sách theme trong menu bên cạnh.
-      * **Menu thả xuống:** Chọn một phong cách giao diện bạn thích.
-  * **Các ô Thời gian chờ (giây):**
-      * **Chờ xử lý ảnh:** Thời gian chờ sau khi tải ảnh lên.
-      * **Chờ tạo video:** Thời gian chờ sau khi bấm nút "Run" để video được tạo.
-      * **Chờ hàng đợi:** Thời gian chờ nếu phát hiện hàng đợi của Hailuo đang đầy.
+6.  **Kết nối Trình duyệt**:
 
-**Bước 4: Bắt đầu chạy**
+      * **Quan trọng**: Hãy đóng tất cả các cửa sổ Firefox đang mở trên máy của bạn.
+      * Nhấn nút **"Mở trình duyệt"**. Tool sẽ mở một cửa sổ Firefox mới với profile mặc định của bạn.
+      * Hãy chắc chắn bạn đã đăng nhập vào trang `hailuoai.video` trên trình duyệt này.
+      * *Nếu trình duyệt không mở*: Nhấn nút **"Chọn Profile"** để tự chọn thủ công thư mục profile Firefox của bạn rồi thử lại.
 
-  * **Bắt đầu chạy:** Sau khi thiết lập xong, nhấn nút này. Nút sẽ chuyển thành "Đang chạy" và quá trình tự động hóa sẽ bắt đầu.
-  * **Tạm dừng / Tiếp tục:** Nhấn để tạm dừng. Nút sẽ chuyển thành "Tiếp tục". Nhấn lần nữa để chạy lại.
-  * **Kết thúc:** Dừng hoàn toàn quá trình đang chạy.
+7.  **Bắt đầu Chạy**:
 
-**Bước 5: Theo dõi tiến trình**
+      * Khi trình duyệt đã sẵn sàng, nhấn nút **"Bắt đầu chạy"**. Quá trình tự động hóa sẽ bắt đầu.
 
-  * Toàn bộ quá trình làm việc của tool sẽ được hiển thị chi tiết trong ô **"Log"**.
-  * Nếu có ảnh nào bị lỗi sau khi đã thử lại nhiều lần, nhãn "Log" sẽ cập nhật số lượng (ví dụ: `Log: (2 ảnh lỗi)`). Bạn có thể nhấn vào nhãn này để xem danh sách các ảnh đã bị lỗi.
+8.  **Theo dõi và Điều khiển**:
 
-#### **5. Xử lý Lỗi thường gặp**
+      * Quan sát tiến trình trong khu vực Log.
+      * Sử dụng nút **"Tạm dừng"** / **"Tiếp tục"** để quản lý tác vụ.
+      * Nhấn **"Kết thúc"** để dừng hoàn toàn quá trình (tool sẽ hoàn thành nốt tác vụ đang dở và dừng lại).
 
-  * **Tool báo lỗi "Không thể kết nối..." hoặc không chạy?**
+-----
 
-      * **Nguyên nhân:** Rất có thể bạn đã quên không chạy shortcut **"Khởi động Firefox cho Tool"** trước, hoặc đã lỡ tay tắt cửa sổ Firefox đó.
-      * **Giải pháp:** Tắt tool đi. Chạy lại shortcut Firefox, sau đó mở lại tool.
+## 💡 Cơ chế Thông minh
 
-  * **Tool chạy nhưng không đăng nhập được?**
+Tool được tích hợp các cơ chế tự động giúp trải nghiệm của bạn mượt mà và hiệu quả hơn.
 
-      * **Nguyên nhân:** Bạn đã bỏ qua **Bước 1** trong phần "Cài đặt và Chuẩn bị".
-      * **Giải pháp:** Tắt tool và shortcut Firefox. Mở Firefox bình thường, đăng nhập vào trang Hailuo, sau đó làm lại từ đầu.
+### 1\. Tự động lưu tiến trình
 
-  * **Tool bị treo hoặc dừng lại rất lâu?**
+Sau khi xử lý thành công **mỗi một ảnh**, tool sẽ **tự động cập nhật giá trị trong ô "Bắt đầu từ ảnh số"** lên con số tiếp theo. Nếu bạn chủ động nhấn "Kết thúc" hoặc tool dừng lại vì bất kỳ lý do gì, bạn không cần phải nhớ mình đã làm đến ảnh nào. Khi chạy lại, chỉ cần chọn lại đúng thư mục đó, tool sẽ tự động bắt đầu từ ảnh còn dang dở.
 
-      * **Nguyên nhân:** Có thể hàng đợi của Hailuo đang rất đầy.
-      * **Giải pháp:** Hãy nhìn vào ô Log, tool sẽ báo "Hàng đợi đang đầy...". Vui lòng kiên nhẫn chờ, tool sẽ tự động chạy tiếp khi hàng đợi giảm xuống.
+### 2\. Tự động quay vòng Prompt
 
-  * **Chương trình bị phần mềm diệt virus chặn?**
+Nếu số lượng ảnh trong thư mục nhiều hơn số lượng prompt, tool sẽ **tự động quay vòng, sử dụng lại các prompt từ đầu**. Ví dụ: bạn có 100 ảnh nhưng chỉ có 10 prompt. Ảnh thứ 11 sẽ tự động quay lại sử dụng prompt 1. Điều này giúp bạn không cần chuẩn bị một danh sách prompt quá dài.
 
-      * **Nguyên nhân:** Đôi khi các chương trình `.exe` tự tạo bị nhận diện nhầm là virus.
-      * **Giải pháp:** Đây là cảnh báo sai (false positive). Bạn có thể tạm thời tắt phần mềm diệt virus hoặc thêm file `HailuoAI v4.0.exe` vào danh sách an toàn/ngoại lệ (exception list).
+-----
 
-Chúc bạn sử dụng công cụ hiệu quả\!
+## ⚙️ Giải thích các Cài đặt
 
-***
+### Khu vực Dữ liệu đầu vào
 
-### **Hailuo Automation Tool v4.0 User Guide**
+  * **Thêm thư mục...**: Mở hộp thoại để chọn một thư mục ảnh và thêm vào hàng đợi.
+  * **Xóa thư mục / Xóa tất cả**: Xóa các thư mục đã chọn hoặc xóa toàn bộ khỏi hàng đợi.
+  * **Dán danh sách đường dẫn**: Bạn có thể dán nhiều đường dẫn thư mục (mỗi đường dẫn một dòng) vào đây và nhấn **Thêm từ danh sách** để thêm hàng loạt.
+  * **File prompt**: Đường dẫn đến file `.txt` chứa các câu lệnh của bạn.
 
-**Last Updated:** August 16, 2025
+### Khu vực Cài đặt Tác vụ
 
-**1. Introduction**
+  * **Bắt đầu từ ảnh số**: Tool sẽ bắt đầu xử lý từ ảnh thứ `N` trong thư mục. Giá trị này sẽ được tự động cập nhật.
+  * **Số lần thử lại**: Nếu một ảnh bị lỗi khi tải lên, tool sẽ tự động thử lại `N` lần trước khi bỏ qua.
+  * **Giao diện (Tối / Sáng) và Chủ đề**: Cho phép bạn tùy chỉnh giao diện. Nhấn nút gạt để đổi chế độ Sáng/Tối, hoặc chọn một chủ đề màu sắc khác từ menu thả xuống.
+  * **Chờ xử lý ảnh (s)**: Thời gian (giây) tool sẽ chờ sau khi tải ảnh lên để trang web xử lý.
+  * **Chờ tạo video (s)**: Thời gian (giây) tool sẽ chờ sau khi nhấn nút tạo video.
+  * **Chờ hàng đợi (s)**: Nếu hàng đợi của Hailuo AI đầy, tool sẽ chờ `N` giây trước khi kiểm tra lại.
+  * **Số ảnh / thư mục (0 = tất cả)**: Giới hạn số lượng ảnh sẽ được xử lý trong mỗi thư mục. Để `0` nếu muốn xử lý tất cả ảnh.
 
-Welcome to the Hailuo Automation Tool v4.0! This tool is designed to fully automate the process of creating videos from images and prompts on the Hailuo AI platform, helping you save maximum time and effort.
+### Khu vực Điều khiển
 
-**2. System Requirements**
+  * **Mở trình duyệt**: Mở trình duyệt Firefox và kết nối với tool.
+  * **Chọn Profile**: Dùng trong trường hợp tool không tự tìm thấy profile Firefox. Nút này cho phép bạn chọn thủ công và sẽ mở sẵn thư mục profile phổ biến nhất.
+  * **Bắt đầu chạy**: Khởi động quá trình tự động hóa.
+  * **Tạm dừng / Tiếp tục**: Tạm dừng hoặc tiếp tục tác vụ đang chạy.
+  * **Kết thúc**: Gửi yêu cầu dừng tác vụ một cách an toàn.
 
-To use the tool, your computer must meet the following requirements:
-* **Operating System:** Windows 10 or Windows 11.
-* **Web Browser:** **Mozilla Firefox** (must be installed on the machine).
-* **Program File:** `HailuoAI v4.0.exe`.
+-----
 
-**3. Installation and Preparation (Important - First Time Only)**
+## ⚠️ Lưu ý quan trọng
 
-Before running the tool, you need to prepare a few things:
+  * Luôn **đóng tất cả các cửa sổ Firefox khác** trước khi nhấn nút "Mở trình duyệt" để đảm bảo tool có thể kết nối đúng cách.
+  * Tool sử dụng **profile mặc định** của Firefox để bạn không cần đăng nhập lại. Hãy đảm bảo bạn đã đăng nhập vào Hailuo AI trên Firefox trước đó.
+  * Nếu bạn nhấn **Kết thúc**, tool sẽ lưu lại thư mục đang xử lý dang dở. Lần chạy tiếp theo, bạn có thể bắt đầu lại từ thư mục đó.
 
-**Step 1: Log in to your account on Firefox (Very Important)**
-Because the special Firefox session used by the tool does not support Google login, you need to log in beforehand on a normal Firefox session so the Hailuo website can remember your account.
-1.  Open your Mozilla Firefox browser normally.
-2.  Navigate to the website: **[https://hailuoai.video](https://hailuoai.video)**
-3.  **Log in** using your Google account.
-4.  After a successful login, you can close Firefox. This process only needs to be done once.
+-----
 
-**Step 2: Prepare Your Data Folders**
-* **Image Folder:** Create a folder and copy all the image files you want to create videos from into it.
-* **Prompt File:** Create a text file (`.txt`). In this file, each line is a single prompt. The order of the prompt lines must correspond to the order of the image files in your folder.
+## ❓ Giải đáp thắc mắc
 
-**Step 3: Create a Shortcut to Launch the Special Firefox Session**
-Now, we will create a shortcut to run Firefox in a mode that the tool can connect to.
-1.  Right-click on your Desktop, select **New** -> **Shortcut**.
-2.  In the "Type the location of the item" field, copy and paste the following command exactly:
-    `"C:\Program Files\Mozilla Firefox\firefox.exe" -marionette -start-debugger-server 2828`
-3.  Click **Next**.
-4.  For the shortcut name, you can type `Launch Firefox for Tool` and then click **Finish**.
-You now have a new shortcut icon on your desktop.
+  * **Hỏi:** Tool báo lỗi "Không thể tự động tìm thấy profile Firefox"?
 
-**4. How to Use**
+      * **Đáp:** Do Firefox của bạn được cài ở một vị trí không chuẩn. Hãy nhấn nút **"Chọn Profile"** và tự điều hướng đến thư mục profile của bạn. Nó thường nằm ở `C:\Users\<Tên bạn>\AppData\Roaming\Mozilla\Firefox\Profiles\<tên profile>`.
 
-**Step 1: Launching the Application**
-1.  Double-click the **"Launch Firefox for Tool"** shortcut you just created. A Firefox window will open and navigate to the Hailuo page (you should see that you are already logged in).
-2.  **Keep this Firefox window open.** Do not close it.
-3.  Now, run the `HailuoAI v4.0.exe` file. The tool's main interface will appear.
+  * **Hỏi:** Tại sao một số ảnh bị lỗi và bị bỏ qua?
 
-**Step 2: License Activation (First Time Only)**
-The first time you run the tool, an "Activation" window will appear.
-1.  Click the "Copy" button to get your machine ID.
-2.  Send this ID to the developer to receive an Activation Key.
-3.  Paste the key into the input field and click "Activate".
+      * **Đáp:** Có thể do kết nối mạng không ổn định hoặc ảnh có định dạng không được hỗ trợ. Tool đã tự động thử lại nhiều lần nhưng không thành công. Bạn có thể xem danh sách các ảnh lỗi bằng cách nhấn vào chữ **"Log: (X ảnh lỗi)"**.
 
-**Step 3: Configuring Tasks**
-On the main interface, fill in the following information:
-* **Image Folder:** Click the **"Browse..."** button and select your prepared image folder.
-* **Prompt File:** Click the **"Browse..."** button and select your prompt `.txt` file.
-* **Start from image:** Defaults to `1`. If you want to resume from image number 5, enter `5`.
-* **Retry count:** If an image fails to process, the tool will retry this many times before skipping. Defaults to `3`.
-* **Interface:**
-    * **"Light Mode" / "Dark Mode" Buttons:** Click to filter the theme list in the dropdown menu.
-    * **Dropdown Menu:** Choose an interface style that you like.
-* **Wait Times (seconds):**
-    * **Image processing wait:** Time to wait after uploading an image.
-    * **Video creation wait:** Time to wait after clicking "Run" for the video to be generated.
-    * **Queue wait:** Time to wait if the Hailuo queue is detected to be full.
+  * **Hỏi:** Tool đang chạy thì dừng lại mà không có thông báo gì?
 
-**Step 4: Running the Automation**
-* **Start Automation:** After finishing setup, click this button. It will change to "Running..." and the automation process will begin.
-* **Pause / Resume:** Click to pause the process. The button will change to "Resume". Click it again to continue.
-* **Stop:** Completely stops the current process.
-
-**Step 5: Monitoring Progress**
-* The entire workflow of the tool will be displayed in detail in the **"Log"** area.
-* If any image fails after all retries, the "Log" label will update with a count (e.g., `Log: (2 failed images)`). You can click this label to see a list of the failed images.
-
-**5. Troubleshooting Common Issues**
-
-* **Tool shows a "Cannot connect..." error or doesn't run?**
-    * **Cause:** You likely forgot to run the **"Launch Firefox for Tool"** shortcut first, or you accidentally closed the special Firefox window.
-    * **Solution:** Close the tool. Run the Firefox shortcut again, then re-launch the tool.
-
-* **Tool runs but isn't logged in?**
-    * **Cause:** You skipped **Step 1** in the "Installation and Preparation" section.
-    * **Solution:** Close the tool and the special Firefox window. Open Firefox normally, log in to the Hailuo website, then start over.
-
-* **Tool seems frozen or stops for a long time?**
-    * **Cause:** The Hailuo queue might be very full.
-    * **Solution:** Look at the Log window; the tool will report "Queue is full...". Please be patient, the tool will automatically resume when the queue has space.
-
-* **Program is blocked by Antivirus software?**
-    * **Cause:** Sometimes, custom-made `.exe` programs are mistakenly flagged as viruses.
-    * **Solution:** This is a false positive. You can temporarily disable your antivirus or add the `HailuoAI v4.0.exe` file to its whitelist/exception list.
-
-We hope you enjoy using the tool effectively!
+      * **Đáp:** Hãy kiểm tra khu vực Log để xem thông báo lỗi cuối cùng. Nguyên nhân có thể do mất kết nối internet, trang Hailuo AI thay đổi giao diện, hoặc trình duyệt bị treo. Hãy thử khởi động lại tool.

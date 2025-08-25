@@ -1,7 +1,8 @@
 # 🚀 Hailuo Automation Tool v5.0
 
 Chào mừng bạn đến với **Hailuo Automation Tool**\! Đây là công cụ giúp tự động hóa hoàn toàn quá trình tạo video từ ảnh trên trang web **Hailuo AI Video Generator**, giúp bạn tiết kiệm thời gian và công sức tối đa.
-<img width="902" height="912" alt="Screenshot 2025-08-25 095053" src="https://github.com/user-attachments/assets/637e499c-5a7f-437c-beee-042fe5d5f2c0" />
+<img width="955" height="912" alt="image" src="https://github.com/user-attachments/assets/704d88ab-0881-4911-a605-f07b761cffa4" />
+
 
 -----
 
